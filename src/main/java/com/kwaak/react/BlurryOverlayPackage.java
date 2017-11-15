@@ -22,11 +22,6 @@ public class BlurryOverlayPackage implements ReactPackage {
     }
 
     @Override
-    public List<Class<? extends JavaScriptModule>> createJSModules() {
-        return Collections.emptyList();
-    }
-
-    @Override
     public List<ViewManager> createViewManagers(ReactApplicationContext reactContext) {
         Log.i("BlurryOverlayView", "Created view managers");
         return Arrays.<ViewManager>asList(
